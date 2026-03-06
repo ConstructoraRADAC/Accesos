@@ -1,0 +1,96 @@
+/* Reset total */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prohibido el scroll */
+    background-color: #0d1b2a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: radial-gradient(circle at top, #1b263b 0%, #0d1b2a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el "celular" en medio de la pantalla de la laptop */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Ancho de vista móvil */
+    height: 100vh;    /* Altura total del dispositivo */
+    padding: 5vh 20px; /* Padding dinámico basado en la altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Agrupa todo al centro verticalmente */
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.logo {
+    width: 70%;       /* Reducido para ganar espacio */
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.2rem; /* Texto más contenido */
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #a2adbd;
+    font-size: 0.85rem;
+    margin-bottom: 3vh;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh; /* Espacio flexible entre botones */
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #0d1b2a;
+    text-decoration: none;
+    padding: 12px; /* Un poco más delgado para evitar el desborde */
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid transparent;
+}
+
+/* --- EFECTOS DE COLOR (Mantener igual) --- */
+
+.facebook:hover, .facebook:active { background-color: #1877F2; color: white !important; }
+.instagram:hover, .instagram:active { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: white !important; }
+.tiktok:hover, .tiktok:active { background-color: #000; color: white !important; box-shadow: 2px 2px 0 #fe2c55, -2px -2px 0 #25f4ee; }
+.website:hover, .website:active { background-color: #333; color: white !important; }
+.whatsapp:hover, .whatsapp:active { background-color: #25d366; color: white !important; }
+
+/* Ajuste para iconos */
+.link-card i {
+    font-size: 1.2rem;
+    width: 20px;
+}
